@@ -1,0 +1,25 @@
+{
+  "name": "vue-cli-plugin-auto-alias",
+  "version": "1.0.1",
+  "description": "A vue-cli plugin that automatically sets aliases",
+  "main": "index.js",
+  "scripts": {
+    "release": "standard-version",
+    "release:first": "npm run release --first-release"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BryanAdamss/vue-cli-plugin-auto-alias.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BryanAdamss/vue-cli-plugin-auto-alias/issues"
+  },
+  "homepage": "https://github.com/BryanAdamss/vue-cli-plugin-auto-alias#readme",
+  "devDependencies": {
+    "pascal-case": "^3.1.1",
+    "standard-version": "^8.0.0"
+  }
+}
