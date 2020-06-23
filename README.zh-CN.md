@@ -1,9 +1,8 @@
 # vue-cli-plugin-auto-alias
 
-> A vue-cli plugin that automatically sets aliases
-> according to the `rootDirName` and then auto generated directory alias
+> 根据`rootDirName`自动为其下的文件夹生成别名
 
-## Install
+## 安装
 
 ```sh
 vue add vue-cli-plugin-auto-alias
@@ -13,18 +12,18 @@ or
 vue add auto-alias
 ```
 
-## DefaultOptions
+## 默认选项
 
 ```javascript
 // vue.config.js
 module.exports = {
   pluginOptions: {
     'vue-cli-plugin-auto-alias': {
-      // rooot dir for auto gen alias
+      // 生成别名的根目录名
       rootDirName: 'src',
-      // custom alias
+      // 自定义别名，
       alias: {
-        // just like a normal resolve in Webpack
+        // 像设置webpack.resolve.alias一样设置即可
         // views:path.resolve(__dirname,'views')
       },
     },
@@ -32,9 +31,9 @@ module.exports = {
 }
 ```
 
-## Examples
+## 例子
 
-- If your directory structure as follows
+- 目录结构如下
 
 ```sh
 |---node_modules
@@ -50,19 +49,15 @@ module.exports = {
 |--- vue.config.js
 ```
 
-- and the options as follows
+- 配置如下
 
 ```javascript
 // vue.config.js
 module.exports = {
   pluginOptions: {
     'vue-cli-plugin-auto-alias': {
-      // rooot dir for auto gen alias
       rootDirName: 'src',
-      // custom alias
       alias: {
-        // just like a normal resolve in Webpack
-        // views:path.resolve(__dirname,'views')
         Public: path.resolve(__dirname, 'public'),
       },
     },
@@ -70,7 +65,7 @@ module.exports = {
 }
 ```
 
-- and you will get webpack alias as follows
+- 生成的别名结果
 
 ```javascript
 {
@@ -92,7 +87,7 @@ module.exports = {
 }
 ```
 
-## npm
+## npm 包
 
 - [@bryanadamss/drawing-board](https://www.npmjs.com/package/@bryanadamss/drawing-board)
 - [@bryanadamss/num2chn](https://www.npmjs.com/package/@bryanadamss/num2chn)
@@ -100,7 +95,7 @@ module.exports = {
 
 ## Show your support
 
-Give a ⭐️ if this project helped you!
+如果你觉得这个插件对你有帮助，请给一个小星星 ⭐️(star)
 
 ## 📝 License
 

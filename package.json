@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "release": "standard-version",
-    "release:first": "npm run release --first-release"
+    "release:first": "npm run release --first-release",
+    "pub": "git push --follow-tags origin master && npm publish"
   },
   "repository": {
     "type": "git",
