@@ -2,6 +2,8 @@
 
 > 根据`rootDirName`自动为其下的文件夹生成别名
 
+[English](https://github.com/BryanAdamss/vue-cli-plugin-auto-alias/blob/master/README.md) | 中文
+
 ## 安装
 
 ```sh
@@ -87,8 +89,9 @@ module.exports = {
 }
 ```
 
-## npm 包
+## NPM
 
+- [vue-cli-plugin-auto-alias](https://www.npmjs.com/package/vue-cli-plugin-auto-alias)
 - [@bryanadamss/drawing-board](https://www.npmjs.com/package/@bryanadamss/drawing-board)
 - [@bryanadamss/num2chn](https://www.npmjs.com/package/@bryanadamss/num2chn)
 - [ant-color-converter](https://www.npmjs.com/package/ant-color-converter)

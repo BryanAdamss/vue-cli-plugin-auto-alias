@@ -1,7 +1,8 @@
 # vue-cli-plugin-auto-alias
 
-> A vue-cli plugin that automatically sets aliases
-> according to the `rootDirName` and then auto generated directory alias
+> A vue-cli plugin that automatically sets aliases. According to the `rootDirName` and then auto generated directory alias
+
+English | [中文](https://github.com/BryanAdamss/vue-cli-plugin-auto-alias/blob/master/README.zh-CN.md)
 
 ## Install
 
@@ -92,8 +93,9 @@ module.exports = {
 }
 ```
 
-## npm
+## NPM
 
+- [vue-cli-plugin-auto-alias](https://www.npmjs.com/package/vue-cli-plugin-auto-alias)
 - [@bryanadamss/drawing-board](https://www.npmjs.com/package/@bryanadamss/drawing-board)
 - [@bryanadamss/num2chn](https://www.npmjs.com/package/@bryanadamss/num2chn)
 - [ant-color-converter](https://www.npmjs.com/package/ant-color-converter)
