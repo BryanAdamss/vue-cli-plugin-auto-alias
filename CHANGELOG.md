@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.2.1](https://github.com/BryanAdamss/vue-cli-plugin-auto-alias/compare/v1.2.0...v1.2.1) (2020-06-28)
+
+
+### Bug Fixes
+
+* **module:** 尝试修复未找到pascal-case的缺陷 ([cd1def6](https://github.com/BryanAdamss/vue-cli-plugin-auto-alias/commit/cd1def61274068db9d4fd96e962932062fe3a846))
+
 ## 1.2.0 (2020-06-23)
 
 
