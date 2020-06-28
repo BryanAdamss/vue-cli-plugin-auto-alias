@@ -26,7 +26,7 @@ module.exports = {
       // custom alias
       alias: {
         // just like a normal resolve in Webpack
-        // views:path.resolve(__dirname,'views')
+        // test:path.resolve(__dirname,'test')
       },
     },
   },
@@ -58,12 +58,10 @@ module.exports = {
 module.exports = {
   pluginOptions: {
     'vue-cli-plugin-auto-alias': {
-      // rooot dir for auto gen alias
+      // rooot dir for auto generated alias
       rootDirName: 'src',
       // custom alias
       alias: {
-        // just like a normal resolve in Webpack
-        // views:path.resolve(__dirname,'views')
         Public: path.resolve(__dirname, 'public'),
       },
     },
@@ -74,13 +72,14 @@ module.exports = {
 - and you will get webpack alias as follows
 
 ```javascript
+// vue inspect > output.js
 {
    resolve: {
     alias: {
       '@': 'D:\\Workspace\\web-front-report\\src',
       vue$: 'vue/dist/vue.runtime.esm.js',
 
-      // according to the rootDirName generated alias
+      // according to the rootDirName auto generated alias
       Assets: 'D:\\Workspace\\web-front-report\\src\\assets',
       Components: 'D:\\Workspace\\web-front-report\\src\\components',
       Router: 'D:\\Workspace\\web-front-report\\src\\router',

@@ -21,12 +21,12 @@ vue add auto-alias
 module.exports = {
   pluginOptions: {
     'vue-cli-plugin-auto-alias': {
-      // 生成别名的根目录名
+      // 需要自动生成别名的根目录名
       rootDirName: 'src',
       // 自定义别名，
       alias: {
         // 像设置webpack.resolve.alias一样设置即可
-        // views:path.resolve(__dirname,'views')
+        // test:path.resolve(__dirname,'test')
       },
     },
   },
@@ -58,7 +58,9 @@ module.exports = {
 module.exports = {
   pluginOptions: {
     'vue-cli-plugin-auto-alias': {
-      rootDirName: 'src',
+      rootDirName: 'src', // src目录下的文件夹会自动生成别名
+      // 需要自定义的别名，此处别名会直接以字符串形式设置到alias上，不会做任何路径转换；
+      // 所以要自己确保路径的正确性；
       alias: {
         Public: path.resolve(__dirname, 'public'),
       },
@@ -70,20 +72,21 @@ module.exports = {
 - 生成的别名结果
 
 ```javascript
+// vue inspect > output.js
 {
    resolve: {
     alias: {
       '@': 'D:\\Workspace\\web-front-report\\src',
       vue$: 'vue/dist/vue.runtime.esm.js',
 
-      // according to the rootDirName generated alias
+      // 根据rootDirName下目录自动生成的别名配置
       Assets: 'D:\\Workspace\\web-front-report\\src\\assets',
       Components: 'D:\\Workspace\\web-front-report\\src\\components',
       Router: 'D:\\Workspace\\web-front-report\\src\\router',
       Store: 'D:\\Workspace\\web-front-report\\src\\store',
       CustomDir: 'D:\\Workspace\\web-front-report\\src\\custom-dir',
 
-      // custom alias
+      // 自定义别名
       Public: 'D:\\Workspace\\web-front-report\\public
     },
 }
