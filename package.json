@@ -12,8 +12,14 @@
     "type": "git",
     "url": "git+https://github.com/BryanAdamss/vue-cli-plugin-auto-alias.git"
   },
-  "keywords": [],
-  "author": "GuangHui",
+  "keywords": [
+    "vue",
+    "vue-cli",
+    "vue-cli-plugin",
+    "alias",
+    "auto-alias"
+  ],
+  "author": "bryanadamss@foxmai.com",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/BryanAdamss/vue-cli-plugin-auto-alias/issues"
