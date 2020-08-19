@@ -23,6 +23,10 @@ module.exports = {
     'vue-cli-plugin-auto-alias': {
       // rooot dir for auto gen alias
       rootDirName: 'src',
+      // letter-case
+      // support case: camelCase,capitalCase,constantCase,dotCase,headerCase,noCase,paramCase,pascalCase,pathCase,sentenceCase,snakeCase
+      // https://www.npmjs.com/package/change-case
+      case: 'pascalCase',
       // custom alias
       alias: {
         // just like a normal resolve in Webpack
@@ -60,6 +64,10 @@ module.exports = {
     'vue-cli-plugin-auto-alias': {
       // rooot dir for auto generated alias
       rootDirName: 'src',
+      // letter-case
+      // support case: camelCase,capitalCase,constantCase,dotCase,headerCase,noCase,paramCase,pascalCase,pathCase,sentenceCase,snakeCase
+      // https://www.npmjs.com/package/change-case
+      case: 'pascalCase',
       // custom alias
       alias: {
         Public: path.resolve(__dirname, 'public'),

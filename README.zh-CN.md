@@ -23,6 +23,10 @@ module.exports = {
     'vue-cli-plugin-auto-alias': {
       // 需要自动生成别名的根目录名
       rootDirName: 'src',
+      // 别名大小写
+      // 支持的case  camelCase,capitalCase,constantCase,dotCase,headerCase,noCase,paramCase,pascalCase,pathCase,sentenceCase,snakeCase
+      // https://www.npmjs.com/package/change-case
+      case: 'pascalCase',
       // 自定义别名，
       alias: {
         // 像设置webpack.resolve.alias一样设置即可

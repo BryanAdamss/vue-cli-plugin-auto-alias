@@ -1,7 +1,7 @@
 const fs = require('fs')
 const path = require('path')
 
-const { pascalCase } = require('pascal-case')
+const changeCase = require('./case')
 
 const pluginName = require('./package.json').name
 const defaultOptions = require('./default-options')
@@ -11,7 +11,7 @@ const resolve = (dir) => path.resolve(process.cwd(), dir)
 module.exports = (api, projectOptions) => {
   const pluginOptions =
     projectOptions && projectOptions.pluginOptions
-      ? projectOptions && projectOptions.pluginOptions
+      ? projectOptions.pluginOptions
       : {}
 
   const aliasOptions = pluginOptions[pluginName]
@@ -28,7 +28,7 @@ module.exports = (api, projectOptions) => {
       const stat = fs.statSync(resolve(`${rootDirName}/${v}`))
       if (stat.isDirectory())
         config.resolve.alias.set(
-          `${pascalCase(v)}`,
+          `${changeCase(v, aliasOptions.case)}`,
           resolve(`${rootDirName}/${v}`)
         )
     })
