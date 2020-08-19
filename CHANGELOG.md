@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.3.0](https://github.com/BryanAdamss/vue-cli-plugin-auto-alias/compare/v1.2.3...v1.3.0) (2020-08-19)
+
+
+### Features
+
+* **case:** 支持自定义别名case ([5332da3](https://github.com/BryanAdamss/vue-cli-plugin-auto-alias/commit/5332da3d4d2a7a1314511c7d46e45c1af5baeb33))
+
 ### [1.2.3](https://github.com/BryanAdamss/vue-cli-plugin-auto-alias/compare/v1.2.2...v1.2.3) (2020-07-10)
 
 ### [1.2.2](https://github.com/BryanAdamss/vue-cli-plugin-auto-alias/compare/v1.2.1...v1.2.2) (2020-06-28)
