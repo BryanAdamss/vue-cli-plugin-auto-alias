@@ -63,6 +63,10 @@ module.exports = {
   pluginOptions: {
     'vue-cli-plugin-auto-alias': {
       rootDirName: 'src', // src目录下的文件夹会自动生成别名
+      // 别名大小写
+      // 支持的case  camelCase,capitalCase,constantCase,dotCase,headerCase,noCase,paramCase,pascalCase,pathCase,sentenceCase,snakeCase
+      // https://www.npmjs.com/package/change-case
+      case: 'pascalCase',
       // 需要自定义的别名，此处别名会直接以字符串形式设置到alias上，不会做任何路径转换；
       // 所以要自己确保路径的正确性；
       alias: {
